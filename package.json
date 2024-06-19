@@ -1,0 +1,41 @@
+{
+  "name": "prod-gallery_mvc",
+  "version": "1.0.0",
+  "description": "Práctica NODEJS-EXPRESS-MVC para CaC 2024",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npx nodemon",
+    "create-db": "node ./src/seed/db_creation.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasMagliano/prod-gallery_mvc.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mvc",
+    "product-gallery"
+  ],
+  "author": "Matías Magliano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasMagliano/prod-gallery_mvc/issues"
+  },
+  "homepage": "https://github.com/MatiasMagliano/prod-gallery_mvc#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.10.1",
+    "sharp": "^0.33.4"
+  }
+}

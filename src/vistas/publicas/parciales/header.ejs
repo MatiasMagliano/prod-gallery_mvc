@@ -1,0 +1,44 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">CaC implementación backend en nodejs & expressjs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Presione para navegar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="hamburguesa">
+                <ul class="navbar-nav me-auto">
+                    <!-- ELEMENTOS DEL MENU -->
+                    <li class="nav-item active" aria-current="page">
+                        <a class="nav-link" href="../index.php">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Últimos posts</a>
+                    </li>
+                </ul>
+            
+                <!-- MENU DE USUARIO FORMULARIO DE BÚSQUEDA A LA DERECHA -->
+                <ul class="navbar-nav ms-auto bg-dark">
+                    <% if(typeof(user) !== "undefined") { %>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <%- user.nombre %>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark text-light" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item text-light" href="index.php">Inicio admin</a></li>
+                                <li><a class="dropdown-item text-light" href="new-post.php">Nuevo producto</a></li>
+                                <li><a class="dropdown-item text-light" href="categories.php">Categorías</a></li>
+                                <li><hr class="dropdown-divider text-light"></li>
+                                <li><a class="dropdown-item text-light" href="logout.php" id="logout">Salir</a></li>
+                            </ul>
+                        </li>
+                    <% } else { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin/login.php">Ingresar</a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
