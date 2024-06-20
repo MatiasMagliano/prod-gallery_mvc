@@ -1,0 +1,51 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-7">
+                <div class="card rounded-3 text-black">
+                    <div class="card-body p-md-5 mx-md-4">
+
+                        <form action="/registro" method="post">
+                            <p>Por favor provea sus datos de acceso</p>
+
+                            <div class="form-outline input-group mb-4">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="bi bi-pencil"></i>
+                                </span>
+                                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y apellido" required/>
+                            </div>
+
+                            <div class="form-outline input-group mb-4">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="email" id="username" name="username" class="form-control" placeholder="Nombre de usuario" required/>
+                            </div>
+
+                            <div class="form-outline input-group mb-4">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="bi bi-asterisk"></i>
+                                </span>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required/>
+                            </div>
+                            
+                            <div class="form-outline input-group mb-4">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="bi bi-asterisk"></i>
+                                </span>
+                                <input type="password" id="password_repeat" name="password_repeat" class="form-control" placeholder="Repita su ontraseña" required/>
+                            </div>
+
+                            <div class="text-center pt-1 mb-5 pb-1">
+                                <input class="btn btn-outline-secondary mb-3" type="submit" value="Registrarse">
+                                <a href="/index" class="btn btn-secondary mb-3 ms-3" role="button">Cancelar</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

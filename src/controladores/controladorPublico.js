@@ -19,4 +19,28 @@ export class ControladorPublico {
             throw error;
         }
     }
+
+    async login(req, res) {
+        try {
+            res.render(
+                path.resolve(VIEWS, "publicas", "login"), {
+                    titulo: "Ingreso de usuarios registrados"
+                }
+            );
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    async registro(req, res) {
+        try {
+            res.render(
+                path.resolve(VIEWS, "publicas", "registro"), {
+                    titulo: "Registro de nuevos usuarios"
+                }
+            );
+        } catch (error) {
+            throw error;
+        }
+    }
 }

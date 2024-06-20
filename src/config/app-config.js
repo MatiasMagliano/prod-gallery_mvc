@@ -10,9 +10,6 @@ const APP_PORT = process.env.APP_PORT;
 // path a las vistas (process.CurrentWorkDirectory)
 const VIEWS = path.resolve(process.cwd(), "src", "vistas");
 
-// encriptación con salt rounds
-const SALT_ROUNDS = process.env.SALT_ROUNDS;
-
 // administración del pool de conexiones a la base de datos
 const pool = createPool({
     host: process.env.DB_HOST,
@@ -37,6 +34,5 @@ pool.getConnection()
 export {
     APP_PORT,
     VIEWS,
-    SALT_ROUNDS,
     pool,
 };

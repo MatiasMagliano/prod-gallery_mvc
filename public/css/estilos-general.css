@@ -7,7 +7,7 @@ aside {
     padding-right: 1%;
 }
 
-section {
+#seccion-productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 10px;
@@ -16,8 +16,9 @@ section {
     max-height: 80vh;
 }
 
-section .card {
+#seccion-productos .card {
     border-radius: 7px;
+    background-color: #edede9;
 }
 
 a {
@@ -29,4 +30,28 @@ img {
     width: auto;
     height: 200px;
     object-fit: contain;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #d6ccc2, #f5ebe0, #e3d5ca, #d5bdaf);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #d6ccc2, #f5ebe0, #e3d5ca, #d5bdaf);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
 }
